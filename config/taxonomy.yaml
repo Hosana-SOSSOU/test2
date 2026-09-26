@@ -1,0 +1,230 @@
+# Taxonomy configuration for Local Intelligent PDF Organizer
+# Hierarchical categories for document classification.
+# Subcategories can be specified as nested keys.
+# Keywords can optionally be defined under each leaf to guide rule-based classification.
+
+Maths:
+  Algèbre:
+    keywords:
+      - "eigenvalue"
+      - "eigenvector"
+      - "vector space"
+      - "matrix"
+      - "linear algebra"
+      - "diagonalization"
+      - "kernel"
+      - "espace vectoriel"
+      - "matrice"
+      - "algebre lineaire"
+      - "valeur propre"
+  Analyse:
+    keywords:
+      - "calculus"
+      - "integral"
+      - "derivative"
+      - "differential equation"
+      - "fourier series"
+      - "hilbert space"
+      - "integrale"
+      - "derivee"
+      - "equation differentielle"
+      - "serie de fourier"
+  Probabilités:
+    keywords:
+      - "probability"
+      - "random variable"
+      - "distribution"
+      - "markov chain"
+      - "bayes"
+      - "probabilite"
+      - "variable aleatoire"
+      - "chaine de markov"
+  Statistiques:
+    keywords:
+      - "hypothesis testing"
+      - "regression"
+      - "p-value"
+      - "variance"
+      - "covariance"
+      - "confidence interval"
+      - "statistique"
+      - "intervalle de confiance"
+  Général:
+    keywords:
+      - "mathematics"
+      - "theorème"
+      - "lemme"
+      - "mathematiques"
+      - "proof"
+
+Informatique:
+  Intelligence-Artificielle:
+    keywords:
+      - "neural network"
+      - "deep learning"
+      - "cnn"
+      - "convolutional"
+      - "transformer"
+      - "backpropagation"
+      - "gradient descent"
+      - "machine learning"
+      - "reseau de neurones"
+      - "apprentissage profond"
+      - "reinforcement learning"
+  Programmation:
+    keywords:
+      - "python"
+      - "rust"
+      - "c++"
+      - "golang"
+      - "javascript"
+      - "typescript"
+      - "function"
+      - "object oriented"
+      - "class"
+      - "compilateur"
+      - "programmation"
+  Algorithmique:
+    keywords:
+      - "algorithm"
+      - "binary tree"
+      - "graph theory"
+      - "dynamic programming"
+      - "complexity"
+      - "dijkstra"
+      - "sorting"
+      - "arbre binaire"
+      - "graphe"
+      - "programmation dynamique"
+  Data-Science:
+    keywords:
+      - "data science"
+      - "pandas"
+      - "data visualization"
+      - "feature engineering"
+      - "clustering"
+      - "big data"
+      - "data analysis"
+  Systèmes:
+    keywords:
+      - "operating system"
+      - "kernel"
+      - "linux"
+      - "posix"
+      - "process"
+      - "thread"
+      - "memory management"
+      - "systeme d'exploitation"
+      - "fichier systeme"
+  Réseaux:
+    keywords:
+      - "tcp/ip"
+      - "routing"
+      - "dns"
+      - "ethernet"
+      - "socket"
+      - "http"
+      - "protocol"
+      - "reseau"
+  Général:
+    keywords:
+      - "computer science"
+      - "software engineering"
+      - "informatique"
+
+Physique:
+  keywords:
+    - "thermodynamics"
+    - "entropy"
+    - "heat engine"
+    - "quantum mechanics"
+    - "electromagnetism"
+    - "relativity"
+    - "newton"
+    - "physique"
+    - "mecanique quantique"
+    - "thermodynamique"
+
+Électronique:
+  keywords:
+    - "transistor"
+    - "diode"
+    - "microcontroller"
+    - "circuit"
+    - "fpga"
+    - "mosfet"
+    - "amplificateur"
+    - "electronique"
+
+Ingénierie:
+  keywords:
+    - "engineering"
+    - "cad"
+    - "mechanics"
+    - "materials science"
+    - "ingenierie"
+    - "mecanique"
+
+Sciences:
+  keywords:
+    - "biology"
+    - "chemistry"
+    - "astronomy"
+    - "geology"
+    - "chimie"
+    - "biologie"
+
+Philosophie:
+  keywords:
+    - "philosophy"
+    - "epistemology"
+    - "ethics"
+    - "metaphysics"
+    - "philosophie"
+    - "ethique"
+
+Économie:
+  keywords:
+    - "economics"
+    - "macroeconomics"
+    - "microeconomics"
+    - "inflation"
+    - "market"
+    - "economie"
+    - "marche"
+
+Cours:
+  keywords:
+    - "syllabus"
+    - "lecture notes"
+    - "homework"
+    - "assignment"
+    - "exam"
+    - "examen"
+    - "cours"
+    - "travaux diriges"
+    - "td"
+    - "tp"
+
+Livres:
+  keywords:
+    - "preface"
+    - "table of contents"
+    - "chapter"
+    - "isbn"
+    - "chapitre"
+    - "edition"
+
+Articles:
+  keywords:
+    - "abstract"
+    - "introduction"
+    - "references"
+    - "doi"
+    - "proceedings"
+    - "ieee"
+    - "acm"
+    - "arxiv"
+
+À_classer:
+  keywords: []

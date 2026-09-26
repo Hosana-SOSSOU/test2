@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-pdf-organizer"
+version = "1.0.0"
+description = "Local Intelligent PDF Organizer for Linux - safe, explainable, offline document classification and relocation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Local PDF Organizer Contributors" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: System :: Archiving",
+]
+
+dependencies = [
+    "PyYAML>=6.0",
+    "PyMuPDF>=1.23.0",
+]
+
+[project.optional-dependencies]
+ocr = [
+    "pytesseract>=0.3.10",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.scripts]
+pdf-organizer = "pdf_organizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

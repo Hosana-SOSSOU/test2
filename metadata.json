@@ -1,0 +1,6 @@
+{
+  "name": "Local Intelligent PDF Organizer",
+  "description": "Système local et sécurisé de découverte, classification, déduplication et organisation de PDFs pour Linux avec mode simulation et rollback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

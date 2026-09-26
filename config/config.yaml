@@ -1,0 +1,35 @@
+# Global configuration for Local Intelligent PDF Organizer
+# 100% offline, local-first Linux document organization.
+
+classification:
+  backend: rule_based             # "rule_based" or "local_llm"
+  manual_review_threshold: 0.50   # Scores strictly below this route to À_classer
+  default_unclassified_category: À_classer
+  taxonomy_path: config/taxonomy.yaml
+
+ocr:
+  enabled: true
+  backend: tesseract              # "tesseract"
+  min_text_len_per_page: 30       # Fewer chars/page marks document as OCR_REQUIRED
+  lang: fra+eng
+  tesseract_cmd: tesseract
+  cache_dir: .pdf_organizer_cache/ocr
+
+llm:
+  enabled: false                  # Local LLM is optional
+  backend: ollama                 # "ollama" or "llamacpp"
+  model: llama3.2
+  endpoint: http://127.0.0.1:11434
+  timeout_seconds: 30
+  fallback_to_rule_based: true
+
+scanner:
+  follow_symlinks: false
+  min_file_size_bytes: 100        # Ignore 0-byte ghost files
+  recursive: true
+
+safety:
+  overwrite: false                # Absolute rule: NEVER OVERWRITE
+  require_confirmation: true      # Require explicit --yes or user confirmation
+  collision_strategy: RENAME      # "RENAME" (appends _1, _2), "SKIP", or "REVIEW"
+  destination_base_dir: null      # Optional jail: if set, moves outside are blocked
